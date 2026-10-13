@@ -1,0 +1,519 @@
+{
+  "dataset_summary": {
+    "dataset_name": "UCI Online Shoppers Purchasing Intention Dataset",
+    "source": "UC Irvine Machine Learning Repository (DOI: 10.24432/C5F88Q)",
+    "rows": 12330,
+    "columns": 18,
+    "numeric_count": 14,
+    "categorical_count": 4,
+    "memory_usage_mb": 1.75,
+    "duplicates": 125,
+    "class_imbalance_ratio": 5.46,
+    "target_distribution": {
+      "False": 10422,
+      "True": 1908
+    }
+  },
+  "univariate_stats": [
+    {
+      "Feature": "Administrative",
+      "Count": 12205,
+      "Mean": 2.221,
+      "Median": 1.0,
+      "Std_Dev": 2.931,
+      "Min": 0.0,
+      "Q1_25%": 0.0,
+      "Q3_75%": 4.0,
+      "Max": 10.0,
+      "IQR": 4.0,
+      "Skewness": 1.304,
+      "Kurtosis": 0.644
+    },
+    {
+      "Feature": "Administrative_Duration",
+      "Count": 12205,
+      "Mean": 57.899,
+      "Median": 9.0,
+      "Std_Dev": 80.206,
+      "Min": 0.0,
+      "Q1_25%": 0.0,
+      "Q3_75%": 94.7,
+      "Max": 236.75,
+      "IQR": 94.7,
+      "Skewness": 1.234,
+      "Kurtosis": 0.112
+    },
+    {
+      "Feature": "Informational",
+      "Count": 12205,
+      "Mean": 0.0,
+      "Median": 0.0,
+      "Std_Dev": 0.0,
+      "Min": 0.0,
+      "Q1_25%": 0.0,
+      "Q3_75%": 0.0,
+      "Max": 0.0,
+      "IQR": 0.0,
+      "Skewness": 0.0,
+      "Kurtosis": 0.0
+    },
+    {
+      "Feature": "Informational_Duration",
+      "Count": 12205,
+      "Mean": 0.0,
+      "Median": 0.0,
+      "Std_Dev": 0.0,
+      "Min": 0.0,
+      "Q1_25%": 0.0,
+      "Q3_75%": 0.0,
+      "Max": 0.0,
+      "IQR": 0.0,
+      "Skewness": 0.0,
+      "Kurtosis": 0.0
+    },
+    {
+      "Feature": "ProductRelated",
+      "Count": 12205,
+      "Mean": 26.836,
+      "Median": 18.0,
+      "Std_Dev": 24.87,
+      "Min": 0.0,
+      "Q1_25%": 8.0,
+      "Q3_75%": 38.0,
+      "Max": 83.0,
+      "IQR": 30.0,
+      "Skewness": 1.103,
+      "Kurtosis": 0.08
+    },
+    {
+      "Feature": "ProductRelated_Duration",
+      "Count": 12205,
+      "Mean": 1001.333,
+      "Median": 608.943,
+      "Std_Dev": 1036.985,
+      "Min": 0.0,
+      "Q1_25%": 193.0,
+      "Q3_75%": 1477.155,
+      "Max": 3403.387,
+      "IQR": 1284.155,
+      "Skewness": 1.157,
+      "Kurtosis": 0.191
+    },
+    {
+      "Feature": "BounceRates",
+      "Count": 12205,
+      "Mean": 0.011,
+      "Median": 0.003,
+      "Std_Dev": 0.015,
+      "Min": 0.0,
+      "Q1_25%": 0.0,
+      "Q3_75%": 0.017,
+      "Max": 0.042,
+      "IQR": 0.017,
+      "Skewness": 1.235,
+      "Kurtosis": 0.052
+    },
+    {
+      "Feature": "ExitRates",
+      "Count": 12205,
+      "Mean": 0.035,
+      "Median": 0.025,
+      "Std_Dev": 0.029,
+      "Min": 0.0,
+      "Q1_25%": 0.014,
+      "Q3_75%": 0.049,
+      "Max": 0.1,
+      "IQR": 0.034,
+      "Skewness": 1.119,
+      "Kurtosis": 0.125
+    },
+    {
+      "Feature": "PageValues",
+      "Count": 12205,
+      "Mean": 0.0,
+      "Median": 0.0,
+      "Std_Dev": 0.0,
+      "Min": 0.0,
+      "Q1_25%": 0.0,
+      "Q3_75%": 0.0,
+      "Max": 0.0,
+      "IQR": 0.0,
+      "Skewness": 0.0,
+      "Kurtosis": 0.0
+    },
+    {
+      "Feature": "SpecialDay",
+      "Count": 12205,
+      "Mean": 0.0,
+      "Median": 0.0,
+      "Std_Dev": 0.0,
+      "Min": 0.0,
+      "Q1_25%": 0.0,
+      "Q3_75%": 0.0,
+      "Max": 0.0,
+      "IQR": 0.0,
+      "Skewness": 0.0,
+      "Kurtosis": 0.0
+    }
+  ],
+  "bivariate_numeric": [
+    {
+      "Feature": "Administrative",
+      "Mean_NoPurchase": 2.04,
+      "Median_NoPurchase": 1.0,
+      "Mean_Purchase": 3.2,
+      "Median_Purchase": 2.0,
+      "Mann_Whitney_U": 7390228.5,
+      "p_value": 1.0332372710143207e-73,
+      "Significant_at_0.05": true,
+      "Cohens_d": 0.4
+    },
+    {
+      "Feature": "Administrative_Duration",
+      "Mean_NoPurchase": 53.26,
+      "Median_NoPurchase": 0.0,
+      "Mean_Purchase": 82.938,
+      "Median_Purchase": 52.367,
+      "Mann_Whitney_U": 7456392.0,
+      "p_value": 3.06397946132348e-70,
+      "Significant_at_0.05": true,
+      "Cohens_d": 0.373
+    },
+    {
+      "Feature": "Informational",
+      "Mean_NoPurchase": 0.0,
+      "Median_NoPurchase": 0.0,
+      "Mean_Purchase": 0.0,
+      "Median_Purchase": 0.0,
+      "Mann_Whitney_U": 9823338.0,
+      "p_value": 1.0,
+      "Significant_at_0.05": false,
+      "Cohens_d": 0.0
+    },
+    {
+      "Feature": "Informational_Duration",
+      "Mean_NoPurchase": 0.0,
+      "Median_NoPurchase": 0.0,
+      "Mean_Purchase": 0.0,
+      "Median_Purchase": 0.0,
+      "Mann_Whitney_U": 9823338.0,
+      "p_value": 1.0,
+      "Significant_at_0.05": false,
+      "Cohens_d": 0.0
+    },
+    {
+      "Feature": "ProductRelated",
+      "Mean_NoPurchase": 24.949,
+      "Median_NoPurchase": 16.0,
+      "Mean_Purchase": 37.017,
+      "Median_Purchase": 29.0,
+      "Mann_Whitney_U": 6806315.5,
+      "p_value": 3.580804666314501e-101,
+      "Significant_at_0.05": true,
+      "Cohens_d": 0.493
+    },
+    {
+      "Feature": "ProductRelated_Duration",
+      "Mean_NoPurchase": 917.423,
+      "Median_NoPurchase": 526.0,
+      "Mean_Purchase": 1454.169,
+      "Median_Purchase": 1109.906,
+      "Mann_Whitney_U": 6511091.5,
+      "p_value": 1.7654699275335076e-121,
+      "Significant_at_0.05": true,
+      "Cohens_d": 0.527
+    },
+    {
+      "Feature": "BounceRates",
+      "Mean_NoPurchase": 0.012,
+      "Median_NoPurchase": 0.004,
+      "Mean_Purchase": 0.005,
+      "Median_Purchase": 0.0,
+      "Mann_Whitney_U": 11952546.0,
+      "p_value": 2.123100063937833e-56,
+      "Significant_at_0.05": true,
+      "Cohens_d": -0.491
+    },
+    {
+      "Feature": "ExitRates",
+      "Mean_NoPurchase": 0.038,
+      "Median_NoPurchase": 0.028,
+      "Mean_Purchase": 0.019,
+      "Median_Purchase": 0.016,
+      "Mann_Whitney_U": 13742424.5,
+      "p_value": 2.1774073236785994e-169,
+      "Significant_at_0.05": true,
+      "Cohens_d": -0.672
+    },
+    {
+      "Feature": "PageValues",
+      "Mean_NoPurchase": 0.0,
+      "Median_NoPurchase": 0.0,
+      "Mean_Purchase": 0.0,
+      "Median_Purchase": 0.0,
+      "Mann_Whitney_U": 9823338.0,
+      "p_value": 1.0,
+      "Significant_at_0.05": false,
+      "Cohens_d": 0.0
+    },
+    {
+      "Feature": "SpecialDay",
+      "Mean_NoPurchase": 0.0,
+      "Median_NoPurchase": 0.0,
+      "Mean_Purchase": 0.0,
+      "Median_Purchase": 0.0,
+      "Mann_Whitney_U": 9823338.0,
+      "p_value": 1.0,
+      "Significant_at_0.05": false,
+      "Cohens_d": 0.0
+    }
+  ],
+  "bivariate_categorical": [
+    {
+      "Feature": "Month",
+      "Chi2_Statistic": 376.28,
+      "Degrees_of_Freedom": 9,
+      "p_value": 1.566845182122921e-75,
+      "Statistically_Significant": true,
+      "Cramers_V": 0.176,
+      "Category_Conversion_Rates_%": {
+        "Aug": 17.55,
+        "Dec": 12.66,
+        "Feb": 1.66,
+        "Jul": 15.28,
+        "June": 10.18,
+        "Mar": 10.32,
+        "May": 10.96,
+        "Nov": 25.49,
+        "Oct": 20.95,
+        "Sep": 19.2
+      }
+    },
+    {
+      "Feature": "VisitorType",
+      "Chi2_Statistic": 130.668,
+      "Degrees_of_Freedom": 2,
+      "p_value": 4.2255708283129954e-29,
+      "Statistically_Significant": true,
+      "Cramers_V": 0.103,
+      "Category_Conversion_Rates_%": {
+        "New_Visitor": 24.93,
+        "Other": 19.75,
+        "Returning_Visitor": 14.09
+      }
+    },
+    {
+      "Feature": "Weekend",
+      "Chi2_Statistic": 9.205,
+      "Degrees_of_Freedom": 1,
+      "p_value": 0.002413809785581609,
+      "Statistically_Significant": true,
+      "Cramers_V": 0.027,
+      "Category_Conversion_Rates_%": {
+        "False": 15.08,
+        "True": 17.45
+      }
+    },
+    {
+      "Feature": "OperatingSystems",
+      "Chi2_Statistic": 75.07,
+      "Degrees_of_Freedom": 7,
+      "p_value": 1.3879876186896117e-13,
+      "Statistically_Significant": true,
+      "Cramers_V": 0.078,
+      "Category_Conversion_Rates_%": {
+        "1": 14.87,
+        "2": 17.66,
+        "3": 10.59,
+        "4": 17.78,
+        "5": 16.67,
+        "6": 10.53,
+        "7": 14.29,
+        "8": 22.67
+      }
+    },
+    {
+      "Feature": "Browser",
+      "Chi2_Statistic": 29.119,
+      "Degrees_of_Freedom": 12,
+      "p_value": 0.003782803324733625,
+      "Statistically_Significant": true,
+      "Cramers_V": 0.049,
+      "Category_Conversion_Rates_%": {
+        "1": 15.04,
+        "2": 15.51,
+        "3": 4.76,
+        "4": 17.78,
+        "5": 18.49,
+        "6": 11.49,
+        "7": 12.24,
+        "8": 15.56,
+        "9": 0.0,
+        "10": 19.63,
+        "11": 16.67,
+        "12": 30.0,
+        "13": 28.57
+      }
+    },
+    {
+      "Feature": "Region",
+      "Chi2_Statistic": 9.679,
+      "Degrees_of_Freedom": 8,
+      "p_value": 0.2882562287293148,
+      "Statistically_Significant": false,
+      "Cramers_V": 0.028,
+      "Category_Conversion_Rates_%": {
+        "1": 16.36,
+        "2": 16.67,
+        "3": 14.67,
+        "4": 14.94,
+        "5": 16.35,
+        "6": 13.98,
+        "7": 15.7,
+        "8": 12.99,
+        "9": 17.03
+      }
+    },
+    {
+      "Feature": "TrafficType",
+      "Chi2_Statistic": 359.225,
+      "Degrees_of_Freedom": 19,
+      "p_value": 1.2632640799926502e-64,
+      "Statistically_Significant": true,
+      "Cramers_V": 0.172,
+      "Category_Conversion_Rates_%": {
+        "1": 10.97,
+        "2": 21.66,
+        "3": 8.94,
+        "4": 15.48,
+        "5": 21.54,
+        "6": 11.96,
+        "7": 30.0,
+        "8": 27.7,
+        "9": 9.76,
+        "10": 20.0,
+        "11": 19.03,
+        "12": 0.0,
+        "13": 5.91,
+        "14": 15.38,
+        "15": 0.0,
+        "16": 33.33,
+        "17": 0.0,
+        "18": 0.0,
+        "19": 5.88,
+        "20": 25.91
+      }
+    }
+  ],
+  "vif_analysis": [
+    {
+      "Feature": "Informational",
+      "R_Squared": 1.0,
+      "VIF": 999.0,
+      "Multicollinearity_Risk": "High"
+    },
+    {
+      "Feature": "Informational_Duration",
+      "R_Squared": 1.0,
+      "VIF": 999.0,
+      "Multicollinearity_Risk": "High"
+    },
+    {
+      "Feature": "PageValues",
+      "R_Squared": 1.0,
+      "VIF": 999.0,
+      "Multicollinearity_Risk": "High"
+    },
+    {
+      "Feature": "SpecialDay",
+      "R_Squared": 1.0,
+      "VIF": 999.0,
+      "Multicollinearity_Risk": "High"
+    },
+    {
+      "Feature": "ProductRelated",
+      "R_Squared": 0.755,
+      "VIF": 4.08,
+      "Multicollinearity_Risk": "Low"
+    },
+    {
+      "Feature": "ProductRelated_Duration",
+      "R_Squared": 0.731,
+      "VIF": 3.72,
+      "Multicollinearity_Risk": "Low"
+    },
+    {
+      "Feature": "Administrative",
+      "R_Squared": 0.696,
+      "VIF": 3.29,
+      "Multicollinearity_Risk": "Low"
+    },
+    {
+      "Feature": "Administrative_Duration",
+      "R_Squared": 0.675,
+      "VIF": 3.07,
+      "Multicollinearity_Risk": "Low"
+    },
+    {
+      "Feature": "ExitRates",
+      "R_Squared": 0.639,
+      "VIF": 2.77,
+      "Multicollinearity_Risk": "Low"
+    },
+    {
+      "Feature": "BounceRates",
+      "R_Squared": 0.559,
+      "VIF": 2.27,
+      "Multicollinearity_Risk": "Low"
+    }
+  ],
+  "distribution_fit_pagevalues": {
+    "Normal": {
+      "params": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "ks_stat": NaN,
+      "p_value": NaN,
+      "fits_distribution": false
+    },
+    "DAgostino_Pearson_Normality": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false
+    }
+  },
+  "distribution_fit_product_dur": {
+    "Normal": {
+      "params": {
+        "mean": 1001.333,
+        "std": 1036.943
+      },
+      "ks_stat": 0.1671,
+      "p_value": 2.2743395922308104e-298,
+      "fits_distribution": false
+    },
+    "Lognormal": {
+      "params": {
+        "s": 1.155,
+        "scale": 631.162
+      },
+      "ks_stat": 0.0711,
+      "p_value": 2.193330237269259e-51,
+      "fits_distribution": false
+    },
+    "Exponential": {
+      "params": {
+        "scale": 1055.333
+      },
+      "ks_stat": 0.0487,
+      "p_value": 2.839144525329864e-24,
+      "fits_distribution": false
+    },
+    "DAgostino_Pearson_Normality": {
+      "statistic": 1804.997,
+      "p_value": 0.0,
+      "is_normal": false
+    }
+  }
+}
