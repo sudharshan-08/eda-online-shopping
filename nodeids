@@ -1,0 +1,11 @@
+[
+  "tests/test_pipeline.py::test_data_dictionary",
+  "tests/test_pipeline.py::test_data_integrity",
+  "tests/test_pipeline.py::test_data_loader_dimensions",
+  "tests/test_pipeline.py::test_evaluation_metrics_computation",
+  "tests/test_pipeline.py::test_outlier_detection_and_capping",
+  "tests/test_pipeline.py::test_preprocessing_deduplication",
+  "tests/test_pipeline.py::test_pytorch_bank_mlp_architecture",
+  "tests/test_pipeline.py::test_pytorch_shoppers_mlp_architecture",
+  "tests/test_pipeline.py::test_split_and_scaling_leakage_free"
+]
